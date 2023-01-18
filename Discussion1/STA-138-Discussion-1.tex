@@ -1,0 +1,71 @@
+\documentclass[twocolumn, 10pt, oneside]{article}
+\usepackage[margin=.5in, paperwidth=8.5in, paperheight=11in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{verbatim,enumerate,amsfonts,hyperref,amsthm,amsmath,amssymb,graphicx}
+\usepackage[usenames]{color}
+\usepackage{multicol}
+\begin{document}
+\begin{center} STA 138 - Discussion 1\\
+  Winter 2023
+\end{center}
+
+\emph{For our discussion this week, we will ease into categorical data analysis by illustrating the use of categorical data in the kinds of data analysis that we may be familiar with for numeric data. In doing so we'll explore computational tools that will be useful moving forward.}
+
+\begin{enumerate}
+%Problem 1%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item On Canvas, under Files, Discussions, you will find the file \texttt{patients101.csv}.  This file has the following columns:
+\begin{enumerate}[Column 1:]
+	\item \texttt{age}: The age of the patient.
+	\item \texttt{totalchol}:  A measure of the patients total cholesterol - the higher the number, the more cholesterol.  In units of mg/dL.
+	\item \texttt{sysBP}: The patients systolic blood pressure.  In units of mm Hg.
+	\item \texttt{weight}: The patients weight in units of kg.
+	\item \texttt{height}: The patients height in units of cm.
+	\item \texttt{sedmins}: The patients number of sedentary minutes per week.
+	\item \texttt{obese}: The patients obesity category, with values \texttt{normal}, \texttt{overweight}, \texttt{obese}.
+	\item \texttt{marriage}: The patients marriage category, with values \texttt{other}, \texttt{married}, \texttt{divorced}, \texttt{widowed}, \texttt{nevermarried}. 
+	\item \texttt{gender}: \texttt{M} or \texttt{F}, denoting Male or Female.
+\end{enumerate}
+Consider your response variable  ($Y$) to be the patients systolic blood pressure.  It is a good idea to plot your response variable by itself first, to see the range, skew, etc.
+\begin{enumerate}[(a)]
+	\item Create a histogram of systolic blood pressure.  Be sure to add labels to your axes (when appropriate) as well as a main title.
+	\item Does the histogram suggest the data is left skewed, right skewed, or approximately symmetric?  
+	\item Create a boxplot of systolic blood pressure.  Be sure to add labels to your axes (when appropriate) as well as a main title.
+\item Are there any outliers (unusually small or large observations) in the data?  If so, are they unusually large or small?  What is the smallest data point (approximately), and the largest?
+\end{enumerate}
+%Problem 2%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Continue with \texttt{patients101.csv}.  Consider your response variable  ($Y$) to be the patients systolic blood pressure.  When you have a numeric response variable, and numeric explanatory variables, scatter plots are often useful plots to make.
+\begin{enumerate}[(a)]
+	\item Consider your first explanatory variable to be $X_1$ = weight.  Create a scatter plot with systolic blood pressure on the y axis, and weight on the x axis.  Be sure to add labels to your axes as well as a main title.
+	\item What trend do you see weight having on blood pressure, if any?  
+	\item Consider your second explanatory variable to be $X_2$ = sedmins.  Create a scatter plot with systolic blood pressure on the y axis, and sedentary minutes on the x axis.  Be sure to add labels to your axes as well as a main title.
+	\item What trend do you see weight having on blood pressure, if any? 
+	\end{enumerate}
+%Problem 3%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Continue with \texttt{patients101.csv}.  Consider your response variable  ($Y$) to be the patients systolic blood pressure.  When you have a numeric response variable, and categorical explanatory variables, grouped box-plots or grouped histograms are often useful.
+\begin{enumerate}[(a)]
+	\item Consider your third explanatory variable to be $X_3$ = gender.  Create a grouped box-plot by gender. 
+	\item Does there appear to be a difference in systolic BP based on gender?
+	\item Consider your fourth explanatory variable to be $X_4$= obese.  Create a grouped histogram by obesity category.
+	\item Does there appear to be a difference in systolic BP based on obesity category?  Explain.
+\end{enumerate}
+%Problem 4%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item  Continue with \texttt{patients101.csv}. 
+\begin{enumerate}[(a)]
+	\item Find the average systolic blood pressure.
+	\item Find the average systolic blood pressure by marriage category.
+	\item Find the standard deviation of systolic blood pressure by marriage category.
+	\item Find the number of people in each marriage category.
+	\item Find the five number summary of weight.
+\end{enumerate}
+\end{enumerate}
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item
+\begin{enumerate}[(a)]
+\item
+\item 
+\item 
+\item 
+\end{enumerate}
+
